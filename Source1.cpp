@@ -2137,9 +2137,9 @@ int main()
     //ab.afiseaza();
     //ab.adunanumere();
     //ab.afiseaza();
-    //adunaBilete <Bilet> ac(1);//apel functie template pentru clasa companie 
+    //adunaBilete <Bilet> ac(1);//apel functie template pentru clasa Bilet
     ////ac.adunanumere();
-    ////ac.afiseaza(); // nu merge afisarea 
+    ////ac.afiseaza(); // nu merge afisarea elementelor din clasa apelata 
 
 
     return 0;
