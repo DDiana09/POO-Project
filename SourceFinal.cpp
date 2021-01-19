@@ -1702,214 +1702,214 @@ public:
     }
 };
 
-//class UserInterface {
-//public:
-//    int citesteOptiune(int min, int max) {
-//        int optiune;
-//        cout << "Introdu optiune: ";
-//        cin >> optiune;
-//
-//        if (optiune < min || optiune > max)
-//        {
-//            cout << "Optiune eronata!\n";
-//            return -1;
-//        }
-//        return optiune;
-//    }
-//
-//    void meniuActori() {
-//        cout << "***** MENIU ACTORI *****\n";
-//        cout << "1. Adaugare actor\n";
-//        cout << "2. Actualizare actor\n";
-//        cout << "3. Stergere actor\n";
-//        cout << "4. Afisare actori\n";
-//
-//        int optiune = citesteOptiune(1, 4);
-//
-//        if (optiune != -1)
-//        {
-//            Actori actori("actori.bin");
-//            switch (optiune)
-//            {
-//                case 1:
-//                    actori.adaugaActor();
-//                    break;
-//                case 2:
-//                    actori.modificaActor();
-//                    break;
-//                case 3:
-//                    actori.stergeActor();
-//                    break;
-//                case 4:
-//                    actori.afisareActori();
-//                    break;
-//            }
-//        }
-//    }
-//    void meniuRecenzii() {
-//        cout << "***** MENIU RECENZII *****\n";
-//        cout << "1. Adaugare recenzie\n";
-//        cout << "2. Actualizare recenzie\n";
-//        cout << "3. Stergere recenzie\n";
-//        cout << "4. Afisare recenzii\n";
-//
-//        int optiune = citesteOptiune(1, 4);
-//
-//        if (optiune != -1)
-//        {
-//            Recenzii recenzii("recenzii.bin");
-//            switch (optiune)
-//            {
-//            case 1:
-//                recenzii.adaugaRecenzie();
-//                break;
-//            case 2:
-//                recenzii.modificaRecenzie();
-//                break;
-//            case 3:
-//                recenzii.stergeRecenzie();
-//                break;
-//            case 4:
-//                recenzii.afisareRecenzii();
-//                break;
-//            }
-//        }
-//    }
-//    void meniuBilete() {
-//        cout << "***** MENIU BILETE *****\n";
-//        cout << "1. Adaugare bilet\n";
-//        cout << "2. Actualizare bilet\n";
-//        cout << "3. Stergere bilet\n";
-//        cout << "4. Afisare bilete\n";
-//
-//        int optiune = citesteOptiune(1, 4);
-//
-//        if (optiune != -1)
-//        {
-//            Bilete bilete("bilete.bin");
-//            switch (optiune)
-//            {
-//            case 1:
-//                bilete.adaugaBilet();
-//                break;
-//            case 2:
-//                bilete.modificaBilet();
-//                break;
-//            case 3:
-//                bilete.stergeBilet();
-//                break;
-//            case 4:
-//                bilete.afisareBilete();
-//                break;
-//            }
-//        }
-//    }
-//    void meniuFilme() {
-//        cout << "***** MENIU FILME *****\n";
-//        cout << "1. Adaugare film\n";
-//        cout << "2. Actualizare film\n";
-//        cout << "3. Stergere film\n";
-//        cout << "4. Afisare filme\n";
-//
-//        int optiune = citesteOptiune(1, 4);
-//
-//        if (optiune != -1)
-//        {
-//            Filme filme("filme.bin");
-//            switch (optiune)
-//            {
-//            case 1:
-//                filme.adaugaFilm();
-//                break;
-//            case 2:
-//                filme.modificaFilm();
-//                break;
-//            case 3:
-//                filme.stergeFilm();
-//                break;
-//            case 4:
-//                filme.afisareFilme();
-//                break;
-//            }
-//        }
-//    }
-//    void meniuCinematografe() {
-//        cout << "***** MENIU CINEMATOGRAFE *****\n";
-//        cout << "1. Adaugare cinematograf\n";
-//        cout << "2. Actualizare cinematograf\n";
-//        cout << "3. Stergere cinematograf\n";
-//        cout << "4. Afisare cinematografe\n";
-//
-//        int optiune = citesteOptiune(1, 4);
-//
-//        if (optiune != -1)
-//        {
-//            Cinematografe cinematografe("cinematografe.bin");
-//            switch (optiune)
-//            {
-//            case 1:
-//                cinematografe.adaugaCinematograf();
-//                break;
-//            case 2:
-//                cinematografe.modificaCinematograf();
-//                break;
-//            case 3:
-//                cinematografe.stergeCinematograf();
-//                break;
-//            case 4:
-//                cinematografe.afisareCinematografe();
-//                break;
-//            }
-//        }
-//    }
-//    void meniu() {
-//        cout << "***** MENIU GENERAL *****\n";
-//        cout << "1. Meniu actor\n";
-//        cout << "2. Meniu recenzii\n";
-//        cout << "3. Meniu bilete\n";
-//        cout << "4. Meniu filme\n";
-//        cout << "5. Meniu cinematografe\n";
-//        cout << "0. Terminare program\n";
-//    }
-//    void start() {
-//        int optiune;
-//        
-//        while (true) {
-//            meniu();
-//
-//            optiune = citesteOptiune(0, 5);
-//
-//            if(optiune != -1){
-//                if (optiune == 0)
-//                {
-//                    cout << "Terminare program...\n";
-//                    break;
-//                }
-//                else 
-//                {
-//                    switch (optiune)
-//                    {
-//                        case 1:
-//                            meniuActori();
-//                            break;
-//                        case 2:
-//                            meniuRecenzii();
-//                            break;
-//                        case 3:
-//                            meniuBilete();
-//                            break;
-//                        case 4:
-//                            meniuFilme();
-//                            break;
-//                        case 5:
-//                            meniuCinematografe();
-//                            break;
-//                    }
-//                }
-//            }
-//        }
-//    }
-//};
+class UserInterface {
+public:
+    int citesteOptiune(int min, int max) {
+        int optiune;
+        cout << "Introdu optiune: ";
+        cin >> optiune;
+
+        if (optiune < min || optiune > max)
+        {
+            cout << "Optiune eronata!\n";
+            return -1;
+        }
+        return optiune;
+    }
+
+    void meniuActori() {
+        cout << "***** MENIU ACTORI *****\n";
+        cout << "1. Adaugare actor\n";
+        cout << "2. Actualizare actor\n";
+        cout << "3. Stergere actor\n";
+        cout << "4. Afisare actori\n";
+
+        int optiune = citesteOptiune(1, 4);
+
+        if (optiune != -1)
+        {
+            Actori actori("actori.bin");
+            switch (optiune)
+            {
+                case 1:
+                    actori.adaugaActor();
+                    break;
+                case 2:
+                    actori.modificaActor();
+                    break;
+                case 3:
+                    actori.stergeActor();
+                    break;
+                case 4:
+                    actori.afisareActori();
+                    break;
+            }
+        }
+    }
+    void meniuRecenzii() {
+        cout << "***** MENIU RECENZII *****\n";
+        cout << "1. Adaugare recenzie\n";
+        cout << "2. Actualizare recenzie\n";
+        cout << "3. Stergere recenzie\n";
+        cout << "4. Afisare recenzii\n";
+
+        int optiune = citesteOptiune(1, 4);
+
+        if (optiune != -1)
+        {
+            Recenzii recenzii("recenzii.bin");
+            switch (optiune)
+            {
+            case 1:
+                recenzii.adaugaRecenzie();
+                break;
+            case 2:
+                recenzii.modificaRecenzie();
+                break;
+            case 3:
+                recenzii.stergeRecenzie();
+                break;
+            case 4:
+                recenzii.afisareRecenzii();
+                break;
+            }
+        }
+    }
+    void meniuBilete() {
+        cout << "***** MENIU BILETE *****\n";
+        cout << "1. Adaugare bilet\n";
+        cout << "2. Actualizare bilet\n";
+        cout << "3. Stergere bilet\n";
+        cout << "4. Afisare bilete\n";
+
+        int optiune = citesteOptiune(1, 4);
+
+        if (optiune != -1)
+        {
+            Bilete bilete("bilete.bin");
+            switch (optiune)
+            {
+            case 1:
+                bilete.adaugaBilet();
+                break;
+            case 2:
+                bilete.modificaBilet();
+                break;
+            case 3:
+                bilete.stergeBilet();
+                break;
+            case 4:
+                bilete.afisareBilete();
+                break;
+            }
+        }
+    }
+    void meniuFilme() {
+        cout << "***** MENIU FILME *****\n";
+        cout << "1. Adaugare film\n";
+        cout << "2. Actualizare film\n";
+        cout << "3. Stergere film\n";
+        cout << "4. Afisare filme\n";
+
+        int optiune = citesteOptiune(1, 4);
+
+        if (optiune != -1)
+        {
+            Filme filme("filme.bin");
+            switch (optiune)
+            {
+            case 1:
+                filme.adaugaFilm();
+                break;
+            case 2:
+                filme.modificaFilm();
+                break;
+            case 3:
+                filme.stergeFilm();
+                break;
+            case 4:
+                filme.afisareFilme();
+                break;
+            }
+        }
+    }
+    void meniuCinematografe() {
+        cout << "***** MENIU CINEMATOGRAFE *****\n";
+        cout << "1. Adaugare cinematograf\n";
+        cout << "2. Actualizare cinematograf\n";
+        cout << "3. Stergere cinematograf\n";
+        cout << "4. Afisare cinematografe\n";
+
+        int optiune = citesteOptiune(1, 4);
+
+        if (optiune != -1)
+        {
+            Cinematografe cinematografe("cinematografe.bin");
+            switch (optiune)
+            {
+            case 1:
+                cinematografe.adaugaCinematograf();
+                break;
+            case 2:
+                cinematografe.modificaCinematograf();
+                break;
+            case 3:
+                cinematografe.stergeCinematograf();
+                break;
+            case 4:
+                cinematografe.afisareCinematografe();
+                break;
+            }
+        }
+    }
+    void meniu() {
+        cout << "***** MENIU GENERAL *****\n";
+        cout << "1. Meniu actor\n";
+        cout << "2. Meniu recenzii\n";
+        cout << "3. Meniu bilete\n";
+        cout << "4. Meniu filme\n";
+        cout << "5. Meniu cinematografe\n";
+        cout << "0. Terminare program\n";
+    }
+    void start() {
+        int optiune;
+        
+        while (true) {
+            meniu();
+
+            optiune = citesteOptiune(0, 5);
+
+            if(optiune != -1){
+                if (optiune == 0)
+                {
+                    cout << "Terminare program...\n";
+                    break;
+                }
+                else 
+                {
+                    switch (optiune)
+                    {
+                        case 1:
+                            meniuActori();
+                            break;
+                        case 2:
+                            meniuRecenzii();
+                            break;
+                        case 3:
+                            meniuBilete();
+                            break;
+                        case 4:
+                            meniuFilme();
+                            break;
+                        case 5:
+                            meniuCinematografe();
+                            break;
+                    }
+                }
+            }
+        }
+    }
+};
 
 class Interfata {
 
@@ -2196,8 +2196,8 @@ void adunaBilete<T>::adunanumere()
 
 int main()
 {
-    /*UserInterface ui;
-    ui.start();*/
+    UserInterface ui;
+    ui.start();
 
     /*cout << "========== Test clasa Actor ==========\n";
     Actor a1;
@@ -2304,7 +2304,7 @@ int main()
     cout << sp1;
     cout << l1;*/
 
-   //procesul de virtualizare
+    //procesul de virtualizare
     /*Interfata* vects[2] = { &l1, &sp1 };
     for (int i = 0; i < 2; i++) {
         vects[i]->afisare();
@@ -2328,14 +2328,14 @@ int main()
     cout << s2.getNrMinute() << '\n';
     cout << "======================================\n";*/
 
-    adunaBilete<int> bi(4);
+    /*adunaBilete<int> bi(4);
     bi.afiseaza();
     bi.adunanumere();
     bi.afiseaza();
     adunaBilete<float> ab(4);
     ab.afiseaza();
     ab.adunanumere();
-    ab.afiseaza();
+    ab.afiseaza();*/
     
 
     return 0;
